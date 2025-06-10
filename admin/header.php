@@ -31,10 +31,10 @@
 </head>
 <body>
     <nav>
-        <a href="index.php">🏠 Dashboard</a>
-        <a href="manage-tutorial.php">📚 Manage Tutorials</a>
-        <a href="manage-users.php">👥 Manage Users</a>
-        <a href="logout.php" onclick="return confirm('Logout?')">🚪 Logout</a>
+        <a href="index.php">Dashboard</a>
+        <a href="manage-tutorial.php"> Manage Tutorials</a>
+        <a href="manage-users.php"> Manage Users</a>
+        <a href="logout.php" onclick="return confirm('Logout?')"> Logout</a>
     </nav>
 
 </body>

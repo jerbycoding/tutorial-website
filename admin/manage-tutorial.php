@@ -65,10 +65,10 @@ $result = $stmt->get_result();
 
     </div>
     <form method="GET" style="margin-bottom: 20px;" action="manage-tutorial.php">
-    <input type="text" name="search" placeholder="🔍 Search title or slug" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>" />
+    <input type="text" name="search" placeholder=" Search title or slug" value="<?= htmlspecialchars($_GET['search'] ?? '') ?>" />
 
     <select name="category">
-        <option value="">📂 All Categories</option>
+        <option value=""> All Categories</option>
         <option value="html" <?= ($_GET['category'] ?? '') == 'html' ? 'selected' : '' ?>>HTML</option>
         <option value="css" <?= ($_GET['category'] ?? '') == 'css' ? 'selected' : '' ?>>CSS</option>
         <option value="php" <?= ($_GET['category'] ?? '') == 'php' ? 'selected' : '' ?>>PHP</option>
@@ -96,7 +96,7 @@ $result = $stmt->get_result();
                 <td><?= htmlspecialchars($row['slug']) ?></td>
                 <td><?= htmlspecialchars($row['category']) ?></td>
                 <td>
-                    <a class="btn view" href="tutorial.php?slug=<?= urlencode($row['slug']) ?>" target="_blank"> View</a>
+                    <a class="btn view" href="view-tutorial.php?slug=<?= urlencode($row['slug']) ?>" target="_blank"> View</a>
                     <a class="btn edit" href="edit-tutorial.php?slug=<?= urlencode($row['slug']) ?>">Edit</a>
                     <a class="btn delete" href="delete-tutorial.php?slug=<?= urlencode($row['slug']) ?>">Delete</a>
                 </td>
