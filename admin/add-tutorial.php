@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <textarea name="content" rows="10" required></textarea>
 
-        <input type="submit" value="Update Tutorial"><a href="index.php">Cancel</a>
+        <input type="submit" value="Update Tutorial"><a href="manage-tutorial.php">Cancel</a>
     </form>
 </body>
 </html>
